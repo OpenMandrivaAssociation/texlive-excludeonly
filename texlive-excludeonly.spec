@@ -1,3 +1,9 @@
+# revision 17262
+# category Package
+# catalog-ctan /macros/latex/contrib/excludeonly
+# catalog-date 2010-03-01 08:47:36 +0100
+# catalog-license pd
+# catalog-version 1.0
 Name:		texlive-excludeonly
 Version:	1.0
 Release:	1
@@ -42,6 +48,7 @@ Examples are the classes paper.cls and thesis.cls.
 %{_texmfdistdir}/tex/latex/excludeonly/excludeonly.sty
 %doc %{_texmfdistdir}/doc/latex/excludeonly/excludeonly.pdf
 %doc %{_texmfdistdir}/doc/latex/excludeonly/excludeonly.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ Examples are the classes paper.cls and thesis.cls.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
