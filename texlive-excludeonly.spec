@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-excludeonly
 Version:	1.0
-Release:	10
+Release:	11
 Summary:	Prevent files being \include-ed
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/excludeonly
