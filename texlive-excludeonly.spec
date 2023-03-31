@@ -1,6 +1,6 @@
 Name:		texlive-excludeonly
 Version:	17262
-Release:	1
+Release:	2
 Summary:	Prevent files being \include-ed
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/excludeonly
